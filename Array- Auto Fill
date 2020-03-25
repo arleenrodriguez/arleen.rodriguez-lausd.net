@@ -1,0 +1,32 @@
+public class AutoFill
+{
+  public static void main(String arg[])
+ {
+    //Declaring an array
+    int nums[] = new int[50];
+    //Initialize 1 by 1
+    nums[5] = 34;
+    //Print
+    System.out.println( nums[5] );
+    System.out.println( nums );//??
+  //  System.out.println( nums[12] );
+    
+    //Auto Fill
+    for(int i=0; i<nums.length;i++)
+    {
+      //min + (int)(Math.random() *(max-min) ) 
+      // #'s 1-100   
+      nums[i] = 1 +(int)(Math.random() *( 101-1)) ;    
+    }
+    //Print 
+    for( int i = 0; i<nums.length;i++)
+    {
+      System.out.print( nums[i] + " ");
+    }
+    
+    
+    
+    
+    
+ }  
+}
